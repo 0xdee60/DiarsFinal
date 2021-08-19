@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+
+<div class="container">
+    @foreach (var item in ViewBag.Etiquetas)
+    {
+        <h3>Nombre: </h3>@item.nombre
+        <br />
+        <h3>Descripcion: </h3>@item.descripcion
+        <br />
+
+    }
+</div>

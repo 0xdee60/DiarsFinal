@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+<div class="container">
+    @foreach (var item in ViewBag.Notas)
+    {
+        <h3>Titulo: </h3>@item.titulo
+        <br />
+        <h3>Contenido: </h3>@item.contenido
+        <br />
+        <h3>Fecha de modificacion: </h3> @item.fechaMod.ToShortDateString()
+        <br />
+        <br /><br />
+    }
+</div>

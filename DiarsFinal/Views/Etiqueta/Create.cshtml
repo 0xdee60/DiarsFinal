@@ -1,0 +1,36 @@
+﻿<link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+
+<form method="post" action="/Etiqueta/Create">
+    <h1>Create</h1>
+
+    <h3>Nombre: </h3>
+    <br />
+    <input name="nombre" type="text" />
+    <br />
+    <br />
+    <h3>Descripcion: </h3>
+    <br />
+<textarea class="form-control" id="contedPlug" name="descripcion">
+</textarea>
+
+
+
+    <br />
+    <br />
+    <button type="submit">Crear</button>
+</form>
+
+
+
+
+<script type='text/javascript'>
+    var simplemde = new SimpleMDE({ element: document.getElementById('contedPlug') });
+</script>

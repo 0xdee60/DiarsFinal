@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+<form method="post" action="/EtiquetaNota/Create">
+    <h1>Create</h1>
+    <input name="idEtiquetaNombre" hidden value="@ViewBag.idNota"/>
+    <h3>Etiqueta a agregar: </h3>
+    <br />
+   <select name="idEtiqueta">
+       @foreach (var i in ViewBag.Etiquetas)
+       {
+           <option value="@i.idEtiqueta">@i.nombre</option>
+       }
+   </select>
+
+    <br />
+    <br />
+    <button type="submit">Crear</button>
+</form>
+
+
